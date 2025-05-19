@@ -33,7 +33,7 @@ const Products = () =>{
         let postdata = {method : "delete"}
         fetch(url , postdata)
         .then(response => response.json())
-        .then(deleted =>{
+        .then(deleted =>{ 
             getproduct();
         })
     }

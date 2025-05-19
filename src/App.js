@@ -16,7 +16,7 @@ function App() {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container">
           <a className="navbar-brand">
-            <i className="fa fa-shopping-bag"></i> React e-commerce
+            <i className="fa fa-shopping-bag"></i> Order Your Product
           </a>
           <button 
             className="navbar-toggler" 

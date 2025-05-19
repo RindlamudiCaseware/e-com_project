@@ -19,6 +19,7 @@ const Newproduct = () =>{
     },[])
 
     let[pinfo, setinfo] = useState({});
+    
     const pickvalue = (obj) =>{
         pinfo[obj.target.name] = obj.target.value;
         setinfo(pinfo);

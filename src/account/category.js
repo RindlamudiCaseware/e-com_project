@@ -85,7 +85,7 @@ const Mycategory = () =>{
                     </form>
                     <div className="p-3bg-light mt-4">
                     <h4 className="text-center mt-5 mb-5"> Available Category : {categoryname.length} </h4>
-                        <table className="table table-bordered">
+                        <table className="table table-bordered table-striped">
                             <thead>
                                 <tr className="text-center">
                                     <th> ID </th>
@@ -98,7 +98,7 @@ const Mycategory = () =>{
                                 categoryname.map((cname , index) =>{
                                     return(
                                         <tr key={index}>
-                                            <td> {cname.id} </td>
+                                            <td> {index + 1} </td>
                                             <td> {cname.catname} </td>
                                             <td> <button className="btn btn-warning btn-sm" onClick={obj=>editcategory(cname)}> <i className="fa fa-edit"></i> </button> </td>
                                             <td> <button className="btn btn-danger btn-sm" onClick={obj=>delcategory(cname.id)}> <i className="fa fa-trash"></i> </button> </td>

@@ -11,6 +11,7 @@ import Mycategory from "./category";
 import Newproduct from "./newproduct";
 import Products from "./product";
 import Myorder from "./order";
+import Drag from "./drag";
 
 const Usermodule = () =>{
     return(
@@ -64,10 +65,8 @@ const Usermodule = () =>{
                 <Route exact path="/order" element = {<Myorder/>}  />
                 <Route exact path="/profile"    element = {<Myprofile/>} />
                 <Route exact path="/editprofile" element = {<Editmyprofile/>}  />
-            </Routes>
-
-            
-        </HashRouter>
+            </Routes> 
+        </HashRouter> 
     )
 }
 
@@ -76,5 +75,5 @@ export default Usermodule;
 const logout = () =>{
     localStorage.clear(); // delete everything from localstorage
     window.location.href="#/" // to redirect to main url
-    window.location.reload();
-}
+    window.location.reload(); 
+} 

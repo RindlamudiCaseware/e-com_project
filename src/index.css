@@ -74,7 +74,6 @@ code {
 }
 
 * {
-  
   box-sizing: border-box;
 }
 
@@ -103,4 +102,62 @@ html, body {
   min-width: 100vw;
   align-items: center;
   justify-content: center;
+}
+
+.style-card{
+  border: 1px solid black;
+  padding: auto;
+  background-color: #e9eaf188;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 5%;
+  margin: auto;
+}
+
+.style-card:hover{
+  border: 2px solid black;
+}
+
+.styledata{
+   border: 2px solid green;
+   width: 320px;
+   min-height: 480px;
+   margin-top: 40px;
+   margin-left: 100px;
+   text-align: center;
+   background-color: rgb(241, 238, 234);
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.data{
+  background-color: rgba(186, 160, 155, 0.488);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.styledata .dragging{
+  pointer-events: none;
+  touch-action: none;
+  -ms-touch-action: none;
+  box-shadow: 20px 20px 20px rgba(6, 6, 6, 0.801);
+}
+
+.noselect{
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.styledata-chart{
+   border: 2px solid green;
+   width: 100%;
+   min-height: 380px;
+   margin-top: 40px;
+   margin-left: 100px;
+   text-align: center;
+   background-color: rgb(241, 238, 234);
+   border-radius: 10px;
+   padding: 10px;
 }
